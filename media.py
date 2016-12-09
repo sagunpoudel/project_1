@@ -12,3 +12,4 @@ class Movie():
 # trailer link to it as an argument.
 	def show_trailer(self):
 		webbrower.open(self.trailer)
+		
