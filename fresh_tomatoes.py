@@ -3,8 +3,8 @@ import os
 import re
 import csv
 
-#Creating a template folder for HTML tags to make the script more readable.
-#For this we use _*.html partial file inside the template folder that are executed from the read_template class of csv module
+# Creating a template folder for HTML tags to make the script more readable.
+# For this we use _*.html partial file inside the template folder that are executed from the read_template class of csv module
 def read_template(template):
     """ returns html string from `templates/_<template>.html` """
     return ''.join([row for row in open('templates/_{}.html'.format(template),
@@ -40,7 +40,8 @@ def create_movie_tiles_content(movies):
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            movie_tile_content=movie.storyline,
+            trailer_youtube_id=movie.trailer
         )
     return content
 
