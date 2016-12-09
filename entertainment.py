@@ -25,4 +25,5 @@ befikre = media.Movie("Befikre",
                       "https://www.youtube.com/watch?v=p7X7mwcEJ-w")
 
 movie_list = [Purano_dunga,resham_filili, ae_dil, befikre]
+# calls fresh_tomatoes module to executes the movie_list 
 fresh_tomatoes.open_movies_page(movie_list)
